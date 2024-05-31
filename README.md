@@ -28,7 +28,7 @@ QR-Generator/
 ├── index.html       # Archivo principal de la aplicación.
 ├── style/
 │   └── main.css     # Estilos CSS.
-├── script/
+├── JS/
 │   └── main.js      # Lógica principal de la aplicación.
 ├── README.md        # Archivo con información sobre el proyecto.
 ```
@@ -233,6 +233,3 @@ Si encuentras algún error o tienes sugerencias de mejora, no dudes en abrir un 
 
 Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
 
----
-
-Este README proporciona una visión detallada del funcionamiento del proyecto, junto con instrucciones claras sobre cómo configurarlo y utilizarlo. Puedes ajustar el contenido según sea necesario para reflejar cualquier cambio específico en tu proyecto.
