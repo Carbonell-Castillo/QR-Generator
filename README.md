@@ -1,7 +1,3 @@
-Aquí tienes un ejemplo de un archivo README para tu proyecto QR Generator:
-
----
-
 # QR Generator
 
 ## Descripción
