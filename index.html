@@ -89,12 +89,12 @@
       
             <div class="nice-form-group">
               <label>QR text</label>
-                <input type="text" placeholder="Your text" />
+                <input type="text" placeholder="Your text" id="qrText"/>
             </div>
       
             <div class="nice-form-group">
                 <label>Url</label>
-                <input type="url" placeholder="www.google.com" value="" class="icon-right" />
+                <input type="url" placeholder="www.google.com" value="" class="icon-right" id="qrInput"/>
               </div>
             
             
@@ -119,20 +119,20 @@
             <p>All available input types are included</p>
             <div class="nice-form-group">
                 <label>Export</label>
-                <select>
-                    <option>JPG</option>
-                    <option>PNG</option>
-                    <option>PDF</option>
+                <select id="qrExport">
+                    <option value="JPG">JPG</option>
+                    <option value="PNG">PNG</option>
+                    <option value="PDF">PDF</option>
                 </select>
               </div>
 
             <div class="nice-form-group">
                 <label>Color</label>
-                <input type="color" />
+                <input type="color" id="qrColor"/>
               </div>
               <br>
                     
-            <a class="to-repo">
+            <a class="to-repo" id="generateBtn">
                 
                   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                   <polyline points="15 3 21 3 21 9" />
@@ -152,7 +152,7 @@
               <br>
               <br>
               
-              <center><img src="" alt="" srcset="" id="imgResult"></center>
+              <center><canvas id="qrCanvas" width="250" height="300"></canvas></center>
               
           </section>
       
@@ -199,3 +199,4 @@
     
 </body>
 </html>
+<script src="JS/main.js"></script>
