@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/main.css">
     <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvg/3.0.7/canvg.min.js"></script>
 </head>
 <body>
     <div class="demo-page">
@@ -119,7 +121,8 @@
             <p>All available input types are included</p>
             <div class="nice-form-group">
                 <label>Export</label>
-                <select id="qrExport">
+                <select id="qrTypeDownload">
+                    <option value="SVG">SVG</option>
                     <option value="JPG">JPG</option>
                     <option value="PNG">PNG</option>
                     <option value="PDF">PDF</option>
@@ -140,7 +143,7 @@
                 </svg>
                 View
               </a>
-              <a class="to-reset">
+              <a class="to-reset" id="downloadQr">
                 
                   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                   <polyline points="15 3 21 3 21 9" />
